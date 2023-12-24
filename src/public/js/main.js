@@ -39,7 +39,6 @@ chatForm.addEventListener('submit', (e) => {
 })
 
 document.querySelector('.leave-room-btn').addEventListener('onclick', () => {
-    console.log("Leave event is called!!")
     window.location = '../index.html';
 })
 

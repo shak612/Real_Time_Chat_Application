@@ -5,7 +5,6 @@ require('dotenv').config();
 const server = require('http').createServer(app);
 const {newUsers, getIndividualRoomUsers, formateMessage, getActiveUsers, exitRoom} = require('./utils/helpers/helper');
 const io = require('socket.io')(server);
-console.log("processs.env", process.env.PORT)
 app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', socket => { 
@@ -26,7 +25,6 @@ io.on('connection', socket => {
 
     socket.on('chatMessages', msg => {
        const user = getActiveUsers(socket.id);
-       console.log('Server has created a new user', user, msg); 
        io.to(user[0].room).emit('message', formateMessage(user[0].username, msg))
     })
 
