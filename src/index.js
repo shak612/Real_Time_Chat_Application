@@ -32,16 +32,15 @@ io.on('connection', socket => {
 
     socket.on('disconnect', () => {
         const user = exitRoom(socket.id);
-        io.to(user.room).emit('roomUsers', {
-            room: user.room,
-            users: getIndividualRoomUsers(user.room)
-        });
-        io.to(user.room).emit('message', formateMessage('Airtribe', `${user.username} has left the room`))
+        if(user !== undefined){
+            io.to(user.room).emit('roomUsers', {
+                room: user.room,
+                users: getIndividualRoomUsers(user.room)
+            });
+            io.to(user.room).emit('message', formateMessage('Airtribe', `${user.username} has left the room`))
+        }
      })
 });
 
-// app.get('/', (req, res) => {
-//     res.send('<h1>Hello world</h1>');
-// });
 
 server.listen(PORT, () => console.log(`server is running on PORT -> ${PORT}`));

@@ -90,6 +90,7 @@ body{
 .leave-room-btn{
     padding: 8px;
     width: 120px;
+    background-color: rgb(247, 245, 245);
     border-radius: 6px;
     text-decoration: none;
 }
@@ -150,3 +151,31 @@ input, select {
   width: 120px;
   border-radius: 6px;
 }
+
+
+
+
+/* Style for the container div */
+.chat-messages .message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for the meta information (username and time) */
+  .chat-messages .message .meta {
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  
+  .chat-messages .message .meta span {
+    color: #555;
+    float: right;
+  }
+  
+  /* Style for the actual text message */
+  .chat-messages .message .text {
+    margin: 0;
+  }

@@ -24,7 +24,6 @@ const socket = io();
 socket.emit('joinRoom', {username, room});
 
 socket.on('message', (message) => {
-    console.log("messagesssss", message)
     outputMessage(message)
 })
 
