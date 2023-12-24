@@ -59,7 +59,9 @@ function outputMessage(message){
     para.innerText = message.text;
     div.appendChild(para);
 
-    document.querySelector('.chat-messages').appendChild(div);
+    chatMessages.appendChild(div);
+    // To scroll up 
+    chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 

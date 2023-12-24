@@ -13,7 +13,7 @@ body{
 }
 
 .main-content{
-    height: 395px;
+    height: 420px;
     display: flex;
 }
 
@@ -113,12 +113,16 @@ body{
 }
 
 .send-btn{
-    width: 20%;
+    width: 16%;
     padding: 8px;
     margin-top: 4px;
+    margin-left: 38px;
     border-radius: 6px;
 }
 
+#chat-form{
+   width: 100%;
+}
 
 h1{
     color: white;
@@ -154,6 +158,12 @@ input, select {
 
 
 
+
+.chat-messages {
+    height: 95%;
+    overflow-y: auto; /* Add this property to enable vertical scrollbar when content overflows */
+    padding: 10px; /* Optional padding for better appearance */
+  }
 
 /* Style for the container div */
 .chat-messages .message {
