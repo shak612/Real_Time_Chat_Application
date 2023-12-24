@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Chat Application</title>
 </head>
 <body>
-    <h1>Real Time Chat Application!!</h1>
+    <main class="main-container">
+      <div class="container">
+        <div class="header">
+          <h1>Chat App</h1>
+        </div>
+        <form action="chat.html">
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input 
+                  id="username"
+                  type="text" 
+                  name="username"
+                  placeholder="Enter username..."
+                  required
+                />
+            </div>
+            <div class="form-control">
+                <label for="room">Select Chat Room:</label>
+                <select id="room" name="room">
+                  <option value="backend">Backend Engineering</option>
+                  <option value="frontend">Frontend Engineering</option>
+                  <option value="fullStack">Full Stack Engineering</option>
+                </select>
+            </div>
+            <div class="submit-btn">
+                <button type="submit" class="btn">Start Chat</button>
+            </div>
+        </form>
+      </div> 
+    </main>
+    
 </body>
 </html>

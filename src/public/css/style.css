@@ -1,0 +1,152 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(238, 227, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    height: 395px;
+    display: flex;
+}
+
+.left-side{
+    width: 30%;
+    height: 100%;
+    background-color: blueviolet;
+}
+.left-content{
+    margin: 20px;
+}
+
+.right-side{
+    width: 70%;
+    height: 100%;
+    background-color: #ffff;
+}
+
+/* #title{
+   color: white;
+   padding: 12px;
+}
+#status{
+   color: white;
+   padding: 12px;
+}
+#username{
+   color: white;
+   padding: 12px;
+} */
+
+.container{
+    min-height: 50%;   
+    min-width: 40%;
+    border-radius: 8px;
+    background-color: blueviolet;
+}
+
+.chat-container{
+    min-height: 80%;   
+    margin-bottom: 80px;
+    min-width: 70%;
+    border-radius: 8px;
+    background-color: blueviolet;
+}
+
+.header{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(92, 1, 177);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.header-for-chat{
+    height: 25%;
+    width: 100%;
+    background-color: rgb(92, 1, 177);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header-content-heading{
+    margin-left: 20px;
+}
+.header-content-btn{
+    margin-right: 20px;
+}
+.leave-room-btn{
+    padding: 8px;
+    width: 120px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.footer{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;   
+}
+
+.input-message{
+    width: 75%;
+    border-radius: 6px;
+}
+
+.send-btn{
+    width: 20%;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+}
+
+
+h1{
+    color: white;
+}
+
+.form-control {
+    margin: 20px;
+}
+  
+label {
+ color: white;
+ font-weight: bold;
+}
+
+input, select {
+ padding: 8px;
+ box-sizing: border-box;
+ width: 100%;
+ margin-top: 5px; /* Adjust the margin as needed */
+}
+
+.submit-btn {
+ display: flex;
+ justify-content: center;
+ margin-top: 43px; /* Adjust the margin as needed */
+}
+
+.btn{
+  padding: 8px;
+  width: 120px;
+  border-radius: 6px;
+}
