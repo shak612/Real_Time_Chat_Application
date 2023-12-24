@@ -32,19 +32,6 @@ body{
     background-color: #ffff;
 }
 
-/* #title{
-   color: white;
-   padding: 12px;
-}
-#status{
-   color: white;
-   padding: 12px;
-}
-#username{
-   color: white;
-   padding: 12px;
-} */
-
 .container{
     min-height: 50%;   
     min-width: 40%;
@@ -116,7 +103,7 @@ body{
     width: 16%;
     padding: 8px;
     margin-top: 4px;
-    margin-left: 38px;
+    margin-left: 24px;
     border-radius: 6px;
 }
 
