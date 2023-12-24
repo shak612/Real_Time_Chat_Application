@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+require('dotenv').config();
 const server = require('http').createServer(app);
 const {newUsers, getIndividualRoomUsers, formateMessage, getActiveUsers, exitRoom} = require('./utils/helpers/helper');
 const io = require('socket.io')(server);
-const PORT = 3000;
-
+console.log("processs.env", process.env.PORT)
 app.use(express.static(path.join(__dirname, 'public')));
 
 io.on('connection', socket => { 
@@ -43,4 +43,4 @@ io.on('connection', socket => {
 });
 
 
-server.listen(PORT, () => console.log(`server is running on PORT -> ${PORT}`));
+server.listen(process.env.PORT || 3000, () => console.log(`server is running on PORT -> ${process.env.PORT}`));
